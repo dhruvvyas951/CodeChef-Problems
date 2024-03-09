@@ -1,0 +1,40 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Parent {
+    width: 1000px;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+  }
+
+  .Parent:hover {
+    background-color: white;
+  }
+
+  .Parent:hover .Child{
+    background-color: black;
+  }
+  
+  .Child {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    transition: background-color 0.3s;
+  }
+  
+  @media (max-width: 750px) {
+    .Child {
+      display: none;
+    }
+  }
+  
